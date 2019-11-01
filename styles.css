@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header, section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper{
+    width: 98%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone{
+    padding: 5px 40px;
+    background: orange;
+    border-radius: 5px;
+}
+
+header{
+    background: #C1C7D3;
+    color: #fff;
+}
+nav a{
+    border-right: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+nav a:last-child{
+    border-right: none;
+}
+
+
+.hero{
+    height: 400px;
+    text-align: center;
+    background: url('https://encounteredu.com/uploads/_1200x630_crop_center-center_82_none/arctic-live-2019-ny-alesund-thumb.jpg?mtime=1548771278') no-repeat center center;
+    background-size: cover;
+}
+.hero_content{
+    padding: 50px 100px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+}
+
+.cards .wrapper{
+    flex-wrap: wrap;
+    padding: 150px 0;
+}
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card img{
+    width: 290px;
+    height: 150px;
+}
+
+
+.mission{
+    text-align: center;
+    padding: 100px 0;
+    background: url('https://wallpaperbro.com/img/23944.jpg') no-repeat center center;
+    background-size: 100%;
+}
+
+
+.info .wrapper{
+    flex-direction: column;
+    padding: 150px 0;
+}
+.info_row{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.info_row img{
+    width: 50%;
+}
+.info p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+footer{
+    background: #627BB1;
+    color: #fff;
+    padding: 25px 0;
+}
