@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <div class="wrapper">
+        <div class="wrapper full_menu">
             <img src="https://img.icons8.com/color/48/000000/seal.png">
             <nav>
                 <a>Home</a>
@@ -21,6 +21,15 @@
             <span class="header_phone phone">
                 (559)123-5555
             </span>
+        </div>
+
+        <div class="mobile_menu">
+            <img id="menu_icon" src="img/Hamburger_icon.svg.png" onclick="drop(this)">
+            <div id="menu_drop">
+                <span class="mobile_item">Home</span>
+                <span class="mobile_item">About</span>
+                <span class="mobile_item">Contact</span>
+            </div>
         </div>
     </header>
 
@@ -53,15 +62,15 @@
 
     <section class="mission">
         <div class="hero_content">
-            Seals are the FUTURE! <br>
-            We want to show the world the value seals bring to the lives of everyone involved! <br>
+            <h3>Seals are the FUTURE!</h3>
+            <p>We want to show the world the value seals bring to the lives of everyone involved!</p>
         </div>
     </section>
 
     <section class="info">
         <div class="wrapper">
             <div class="info_row"><img src="img/house-seal.jpg" alt=""><p class="info_pic-text">Seals HATE the wild. There isn't a seal alive who isn't jealous of this little guy.</p></div>
-            <div class="info_row"><p class="info_pic-text">Seals face many natural preditors in the wild, none more vicious than the mountain shark!</p><img src="img/shark-edit.png" alt=""></div>
+            <div class="info_row row_reverse"><p class="info_pic-text">Seals face many natural preditors in the wild, none more vicious than the mountain shark!</p><img src="img/shark-edit.png" alt=""></div>
             <div class="info_row"><img src="https://barkpost.com/wp-content/uploads/2016/02/SealpupFT.jpg" alt=""><p class="info_pic-text">When you are looking for your next pet, don't forget about the seals! Some say they are as cute as dogs so you know you won;t be dissapointed.</p></div>
         </div>
     </section>
@@ -73,5 +82,7 @@
             <span class="footer_email phone">Email: purchase@seals.com</span>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

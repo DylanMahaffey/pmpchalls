@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Esteban|Montserrat&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Esteban', serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 50px;
+}
+h3{
+    font-size: 30px;
+}
+p{
+    font-size: 16px;
 }
 header, section{
     width: 100%;
@@ -39,6 +54,36 @@ nav a{
 nav a:last-child{
     border-right: none;
 }
+.mobile_menu{
+    display: none;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+#menu_icon{
+    width: 50px;
+}
+#menu_drop{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 70%;
+    max-width: 300px;
+    background: #C1C7D3;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+
+    transition: all .5s ease;
+}
+.mobile_item{
+    padding: 20px;
+}
+.mobile_colapse{
+    max-width: 0 !important;
+}
 
 
 .hero{
@@ -55,6 +100,7 @@ nav a:last-child{
 
 .cards .wrapper{
     flex-wrap: wrap;
+    align-items: flex-start;
     padding: 150px 0;
 }
 .card{
@@ -102,4 +148,55 @@ footer{
     background: #627BB1;
     color: #fff;
     padding: 25px 0;
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .info_row{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+    .info_row img{
+        width: 100%;
+    }
+    .info_row p{
+        padding: 40px 0;
+    }
+    .row_reverse{
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .cards .wrapper{
+        justify-content: center;
+    }
+    .card{
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .hero_content{
+        padding: 10px 20px;
+    }
+    footer .wrapper{
+        flex-direction: column;
+    }
+    footer span{
+        margin: 20px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header{
+        height: 70px;
+    }
+    .mobile_menu{
+        display: flex;
+    }
+    .full_menu{
+        display: none;
+    }
+
 }
