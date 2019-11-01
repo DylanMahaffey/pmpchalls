@@ -107,9 +107,6 @@ nav a:last-child{
     align-items: center;
 }
 
-.cards{
-    background: #ECF0F8;
-}
 .cards .wrapper{
     flex-wrap: wrap;
     align-items: flex-start;
@@ -141,8 +138,7 @@ nav a:last-child{
 
 
 .info{
-    background: #B4B9C6;
-    color: #fff;
+    background: #ECF0F3;
 }
 .info .wrapper{
     flex-direction: column;
